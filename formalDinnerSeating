@@ -32,11 +32,11 @@ func shuffle(vals []person) []person {
 var table = rand.Intn(31)
 
 func main() {
+//initial number of people at each table
 	tableFill1 := []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 	tableFill2 := []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 	tableFill3 := []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 
-	//usedTables := []int{}
 	csvFile, _ := os.Open("peopleAndTables.csv")
 	reader := csv.NewReader(bufio.NewReader(csvFile))
 	var students = []person{}
